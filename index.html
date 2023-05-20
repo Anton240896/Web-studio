@@ -8,8 +8,7 @@
   <title>Студія</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com /css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
@@ -22,32 +21,46 @@
 </head>
 
 <body>
-  <!----------------------------header----------------------------------->
+  <!--     header     -->
   <header class="header-main-page">
-    <div class="container-header container">
+    <div class="container-header container ">
       <nav class="nav-header">
+
         <a class="logo_studio link" href="./index.html">WEB<span class="studio link">Studio</span></a>
-        <ul class="header-list list">
-          <li><a class="header_studio link first-list" href="./index.html">Studio</a>
-          <li><a class="header_studio link" href="./portfolio.html">Portfolio</a></li>
-          <li><a class="header_studio link" href="">Contacts</a></li>
-        </ul>
+
+        <div class="menu-mobile">
+          <ul class="header-list list">
+            <li><a class="header_studio link first-list" href="./index.html">Studio</a>
+            <li><a class="header_studio link" href="./portfolio.html">Portfolio</a></li>
+            <li><a class="header_studio link" href="">Contacts</a></li>
+          </ul>
+        </div>
       </nav>
 
 
-      <!----------------------------address----------------------------------->
+      <!--      address     -->
       <address class="">
+
         <ul class="address_contacts  list">
           <li class="contacts"><a class="link link-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
           <li class="contacts"><a class="link link-contacts" href="tel:+110001111111"> +11 (000) 111-11-11</a></li>
         </ul>
       </address>
+
+      <button class="burger-menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu"><svg width="29"
+          height="18">
+          <use href="./images/SVG/work07/burger-defs.svg#burger-icon"></use>
+        </svg>
+      </button>
+
     </div>
+
+
   </header>
   <main>
 
-    <!----------------------------section 1----------------------------------->
+    <!--        section 1     -->
     <section class="section_main_page_title">
       <div class="container">
         <h1 class="h-section-first">Effective Solutions for Your Business</h1>
@@ -55,13 +68,13 @@
       </div>
     </section>
 
-    <!----------------------------section 2----------------------------------->
+    <!--       section 2      -->
     <section class="section_main_page-second">
       <div class="container-section-second container">
         <h2 class="visually-hidden">About us</h2>
 
         <!--1-list-->
-        <ul class="section-second-list list">
+        <ul class="ul-second-list list">
           <li class="list-paragraph">
             <div class="container-hero">
               <svg width="64" height="64">
@@ -76,6 +89,7 @@
           </li>
 
           <!--2-list-->
+
           <li class="list-paragraph">
             <div class="container-hero">
               <svg width="64" height="64">
@@ -120,7 +134,7 @@
       </div>
     </section>
 
-    <!----------------------------section 3----------------------------------->
+    <!--      section 3     -->
     <section class="section_main_page">
       <div class="container-section-third container">
         <h2 class="list_main_page">What are we doing</h2>
@@ -138,12 +152,14 @@
       </div>
     </section>
 
-    <!----------------------------section 4----------------------------------->
+    <!--      section 4      -->
     <section class="section_team">
+      <h2 class="list_main_page-dreamteam">Our Team</h2>
       <div class="container-section-fourth container">
-        <h2 class="list_main_page-dreamteam">Our Team</h2>
 
-        <!-------------------1-list------------------------>
+
+
+        <!--1-list-->
         <ul class="social-media-list list">
           <li class="dreamteam_main_page">
             <img src="./images/img.jpg" alt="Mark Guerrero" width="264" />
@@ -151,7 +167,7 @@
               <h3 class="hero_main_page-dreamteam">Mark Guerrero</h3>
               <p class="text-main_page-dreamteam">Product Designer</p>
 
-              <!----------------------1-social-------------------------->
+              <!--1-social-->
 
               <!--1 list-social-->
               <ul class="social-media-list">
@@ -190,7 +206,7 @@
             </div>
           </li>
 
-          <!--------------------2-list---------------------------->
+          <!--2-list-->
 
           <li class="dreamteam_main_page">
             <img src="./images/imga.jpg" alt="Tom Ford" width="264" />
@@ -198,7 +214,7 @@
               <h3 class="hero_main_page-dreamteam">Tom Ford</h3>
               <p class="text-main_page-dreamteam">Frontend Developer</p>
 
-              <!---------------------2-social------------------------>
+              <!--2-social-->
 
               <!--1 list-social-->
               <ul class="social-media-list">
@@ -209,7 +225,7 @@
                     </svg></a>
                 </li>
 
-                <!--2 list-social-->
+                <!--2 list-social--->
                 <li class="social-list">
                   <a class="link-social" href="">
                     <svg class="icons-social" width="16" height="16">
@@ -236,7 +252,7 @@
             </div>
           </li>
 
-          <!-------------------3-list------------------------->
+          <!--3-list-->
 
           <li class="dreamteam_main_page">
             <img src="./images/imgb.jpg" alt="Camila Garcia" width="264" />
@@ -244,7 +260,7 @@
               <h3 class="hero_main_page-dreamteam">Camila Garcia</h3>
               <p class="text-main_page-dreamteam">Marketing</p>
 
-              <!------------------3-social---------------------->
+              <!--3-social-->
 
               <!--1 list-social-->
               <ul class="social-media-list">
@@ -282,7 +298,7 @@
             </div>
           </li>
 
-          <!--------------------4-list------------------------>
+          <!--4-list-->
 
           <!--4 item-list-->
           <li class="dreamteam_main_page">
@@ -291,7 +307,7 @@
               <h3 class="hero_main_page-dreamteam">Daniel Wilson</h3>
               <p class="text-main_page-dreamteam">UI Designer</p>
 
-              <!----------------4-social----------------------->
+              <!--4-social-->
 
               <!--1 list=social-->
 
@@ -333,7 +349,7 @@
       </div>
     </section>
 
-    <!----------------------------section 5------------------------------------>
+    <!--     section 5     -->
     <section class="five-section">
       <div class="container-five-section container">
         <h2 class="customers">Customers</h2>
@@ -379,7 +395,7 @@
     </section>
   </main>
 
-  <!----------------------------footer----------------------------------->
+  <!--      footer     -->
   <footer class="footer_studio">
     <div class="footer-container container">
       <div class="div-logo-paragraph">
@@ -390,7 +406,7 @@
           marketing & growth solutions.</p>
       </div>
 
-      <!-----------------------social------------------------------------>
+      <!--social-->
       <div class="footer-social">
         <p class="social-media">Social media</p>
         <ul class="social-media-list-footer">
@@ -420,7 +436,7 @@
         </ul>
       </div>
 
-      <!-----------------------subscribe------------------------->
+      <!--subscribe-->
       <div class="container-subscribe">
         <p class="text-subscribe">Subscribe</p>
         <form class="form-subscribe">
@@ -436,18 +452,18 @@
 
   </footer>
 
-  <!----------modal-window----------------->
+  <!--modal-window-->
   <div data-modal class="container-modal is-hidden">
     <div data-modal class="backdrop">
       <button class="close-btn" type="button" data-modal-close><svg class="close-btn-icons" width="8" height="8">
           <use href="./images/button_close.svg#icon-close"></use>
         </svg></button>
 
-      <!----------modal-text----------->
+      <!--modal-text-->
       <p class="text-modal">Leave your contacts and we will call you back</p>
 
       <form class="form-modal">
-        <!--------name-modal-person--------->
+        <!--name-modal-person-->
         <label class="label-form-modal">
           Name
 
@@ -459,7 +475,7 @@
           </span>
         </label>
 
-        <!----------phone-modal-------------->
+        <!--phone-modal-->
         <label class="label-form-modal">
           Phone
 
@@ -472,7 +488,7 @@
         </label>
 
 
-        <!---------email-modal-------->
+        <!--email-modal-->
         <label class="label-form-modal">
           Email
 
@@ -484,13 +500,13 @@
           </span>
         </label>
 
-        <!--------comment-modal--------->
+        <!--comment-modal-->
         <div class="div-form-comment">
           <label class="label-form-modal" for="comment">Comment</label>
           <textarea name="comment" id="comment" placeholder="Text input"></textarea>
         </div>
 
-        <!--------checkbox-modal--------->
+        <!--checkbox-modal-->
         <div class="checkbox-modal">
           <input class="modal-checkbox-input visually-hidden" type="checkbox" name="policy_agreement"
             id="policy_agreement" required />
@@ -498,7 +514,7 @@
             <a href="" class="text-checkbox-link">Privacy Policy</a></label>
         </div>
 
-        <!--------button-modal--------->
+        <!--button-modal-->
         <button type="submit" class="btn_main_page-modal">Send</button>
 
 
@@ -507,8 +523,11 @@
   </div>
 
 
-
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 
