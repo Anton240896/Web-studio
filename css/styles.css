@@ -670,6 +670,15 @@ h2 {
     align-items: baseline;
 }
 
+@media screen and (max-width: 768px) {
+    .container-dreamteam {
+        display: flex;
+
+        padding: 32px 30px;
+
+    }
+}
+
 
 /*h3*/
 
@@ -703,6 +712,7 @@ h2 {
 @media screen and (min-width: 768px) {
 
     .social-media-list {
+        background-color: #F4F4FD;
         display: flex;
         justify-content: center;
         gap: 24px;
@@ -712,6 +722,7 @@ h2 {
 @media screen and (min-width: 768px) and (max-width:1158px) {
 
     .social-media-list {
+        background-color: #F4F4FD;
         display: flex;
         flex-wrap: wrap;
 
@@ -762,6 +773,9 @@ h2 {
 
 
 /*=========================== SECTION 5 ==========================================*/
+.container-five-section {
+    ;
+}
 
 /*section*/
 .five-section {
@@ -790,11 +804,13 @@ h2 {
 }
 
 /*li*/
+
 .first-list-costumers {
     width: calc((100% - 120px) / 6);
     height: 88px;
     list-style: none;
 }
+
 
 /*a*/
 .link-section-five {
