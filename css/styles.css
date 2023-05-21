@@ -94,7 +94,7 @@ h2 {
 
 .container {
     min-width: 320px;
-    max-width: 1400px;
+    max-width: 428px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -773,9 +773,7 @@ h2 {
 
 
 /*=========================== SECTION 5 ==========================================*/
-.container-five-section {
-    ;
-}
+.container-five-section {}
 
 /*section*/
 .five-section {
