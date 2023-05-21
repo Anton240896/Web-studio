@@ -93,8 +93,8 @@ h2 {
 
 
 .container {
-    min-width: 320px;
-    max-width: 428px;
+    min-width: 428px;
+
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -797,16 +797,33 @@ h2 {
 /*ul*/
 .customers-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+@media screen and (min-width:768px) {
+    .customers-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
 
 }
 
 /*li*/
 
 .first-list-costumers {
-    width: calc((100% - 120px) / 6);
+    width: calc((100% - 16px) / 2);
     height: 88px;
     list-style: none;
+}
+
+@media screen and (min-width:768px) {
+    .first-list-costumers {
+        width: calc((100% - 24px) / 3);
+        height: 88px;
+        list-style: none;
+    }
 }
 
 
