@@ -888,9 +888,7 @@ footer {
 }
 
 @media screen and (max-width:768px) {
-    .footer-container {
-        text-align: center;
-    }
+    .footer-container {}
 }
 
 /*************** SOCIAL *************/
