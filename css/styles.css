@@ -497,6 +497,7 @@ h2 {
     font-weight: 500;
     color: var(--span_studio-color-2e2f42);
     font-size: 20px;
+    text-align: center;
     line-height: 0.8;
     letter-spacing: 0.02em;
     margin-top: 0;
@@ -538,16 +539,9 @@ h2 {
     }
 }
 
-/*team*/
-.section_team {
-    background-color: var(--button-All-f4f4fdl);
-}
-
-
 /*============================== SECTION 3=======================================*/
 .section_main_page {
     padding-top: 0;
-    padding-bottom: 120px;
 }
 
 /*h2 What are doing;
@@ -574,8 +568,8 @@ h2 {
 
 /*=========================== SECTION 4==========================================*/
 .section_team {
-    padding-top: 120px;
     padding-bottom: 120px;
+
     background-color: var(--button-All-f4f4fdl);
 }
 
@@ -887,10 +881,25 @@ footer {
 }
 
 /*div-footer*/
-.footer-container {
-    display: block;
+@media screen and (min-width:768px) {
+    .footer-container {
+        display: block;
+    }
 }
 
+@media screen and (min-width:428px) and (max-width:1158px) {
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width:1158px) {
+    .footer-container {
+        display: flex;
+        flex: nowrap;
+    }
+}
 
 /*************** SOCIAL *************/
 /*p social-media*/
@@ -952,6 +961,24 @@ footer {
     align-items: center;
 }
 
+@media screen and (min-width:768px) and (max-width:1158px) {
+    .form-subscribe {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .form-subscribe input {
+        padding-left: 16px;
+    }
+}
+
+@media screen and (min-width:1158px) and (max-width:1400px) {
+    .form-subscribe {
+        display: flex;
+    }
+}
+
 /*************** p ******************/
 .text-subscribe {
     font-weight: 500;
@@ -962,6 +989,21 @@ footer {
     margin-top: 0;
     margin-bottom: 16px;
 }
+
+@media screen and (min-width:768px) and (max-width:1400px) {
+    .text-subscribe {
+        font-weight: 500;
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--color-white);
+        margin-top: 0;
+        margin-bottom: 16px;
+    }
+}
+
+
 
 /************ div-input ****************/
 .container-subscribe {
@@ -981,7 +1023,36 @@ footer {
     padding: 4px;
     border-radius: 4px;
     color: var(--color-white);
+}
 
+@media screen and (min-width:768px) {
+    .container-subscribe input {
+        display: flex;
+        justify-content: center;
+        width: 398px;
+        height: 40px;
+        background-color: #2e2f42;
+        outline: none;
+        border: 1px solid#FFFFFF;
+        padding: 4px;
+        border-radius: 4px;
+        color: var(--color-white);
+    }
+}
+
+@media screen and (min-width:1158px) {
+    .container-subscribe input {
+        display: flex;
+        justify-content: center;
+        width: 264px;
+        height: 40px;
+        background-color: #2e2f42;
+        outline: none;
+        border: 1px solid#FFFFFF;
+        padding: 4px;
+        border-radius: 4px;
+        color: var(--color-white);
+    }
 }
 
 /************** email-subscribe *****************/
@@ -1021,6 +1092,10 @@ footer {
 /********* cursor-subscribe***************/
 .form-subscribe input {
     padding-left: 16px;
+}
+
+@media screen and (min-width:1158px) {
+    .form-subscribe input {}
 }
 
 
@@ -1070,6 +1145,7 @@ footer {
 }
 
 .footer-social {
+    margin-left: 97px;
     text-align: center;
     margin-bottom: 72px;
 }
@@ -1087,7 +1163,7 @@ footer {
     display: inline-block;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1158px) {
     .logo_studio-footer {
         font-family: "Raleway", sans-serif;
         font-weight: 800;
@@ -1114,7 +1190,7 @@ footer {
     margin: 0;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1158px) {
     .footer-paragraph {
         font-size: 16px;
         color: #F4F4FD;
