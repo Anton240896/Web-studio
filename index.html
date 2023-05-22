@@ -48,7 +48,7 @@
         </ul>
       </address>
 
-      <button class="burger-menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu"><svg width="29"
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu"><svg width="29"
           height="18">
           <use href="./images/SVG/work07/burger-defs.svg#burger-icon"></use>
         </svg>
@@ -522,12 +522,62 @@
     </div>
   </div>
 
+  <!--------- mobile-menu --------->
 
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="close-btn" type="button" data-modal-close><svg class="close-btn-icons" width="8" height="8">
+        <use href="./images/button_close.svg#icon-close"></use>
+      </svg></button>
+
+
+    <ul class="mobile-menu list">
+      <li><a href="" class="link-mobile-studio">Studio</a></li>
+      <li><a href="" class="link">Portfolio</a></li>
+      <li><a href="" class="link">Contacts</a></li>
+    </ul>
+
+    <ul class="list">
+      <div class="mobile-contact">
+        <li><a href="" class="link mobile-contacts">+11 (000) 111-11-11</a></li>
+        <li><a href="" class="link mobile-contacts-email">info@devstudio.com</a></li>
+      </div>
+    </ul>
+
+    <!--1 social link-->
+    <ul class="mobile-socials list">
+      <li class="social-list">
+        <a href=""><svg class="icons-social" width="24" height="24">
+            <use href="./images/SVG/social.svg#icon-instagram-2"></use>
+          </svg></a>
+      </li>
+
+      <!--2 social link-->
+      <li class="social-list-mobile"><a href=""><svg class="icons-social" width="24" height="24">
+            <use href="./images/SVG/social.svg#icon-twitter-1"></use>
+          </svg></a></li>
+
+      <!--3 social link-->
+      <li class="social-list-mobile"><a href=""><svg class="icons-social" width="24" height="24">
+            <use href="./images/SVG/social.svg#icon-facebook-1"></use>
+          </svg></a></li>
+
+      <!--4 social link-->
+      <li class="social-list-mobile"><a href=""><svg class="icons-social" width="24" height="24">
+            <use href="./images/SVG/social.svg#icon-linkedin-1"></use>
+          </svg></a></li>
+    </ul>
+    </ul>
+
+  </div>
+
+
+  <!--      js-menu       -->
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>
-  <script src="./js/modal.js"></script>
   <script src="./js/mobile-menu.js"></script>
+
+  <script src="./js/modal.js"></script>
 </body>
 
 
