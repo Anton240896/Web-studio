@@ -121,7 +121,7 @@ h2 {
 
 
 .header-main-page .container {
-    min-height: 70px;
+    min-height: 80px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -1086,6 +1086,7 @@ footer {
         font-weight: 800;
         color: var(--header_studio-color-4d5ae5);
         font-size: 18px;
+        text-align: center;
         width: 410px;
         line-height: 1.17;
         letter-spacing: 0.03em;
