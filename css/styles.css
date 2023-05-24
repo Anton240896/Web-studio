@@ -95,7 +95,7 @@ h2 {
 
 
 .container {
-    min-width: 300px;
+    min-width: 428px;
 
     padding-left: 15px;
     padding-right: 15px;
@@ -242,7 +242,7 @@ h2 {
 
 
 .header-main-page .container {
-    min-height: 80px;
+    min-height: 70px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -346,16 +346,11 @@ h2 {
 
 @media screen and (min-width : 1158px) {
     .container {
-        max-width: 1200px;
+        max-width: 1158px;
 
     }
 }
 
-@media screen and (min-width : 1158px) {
-    .container {
-        margin-left: 80px;
-    }
-}
 
 
 
@@ -615,7 +610,7 @@ screen and (min-resolution: 2dppx) {
 
 /*============================= SECTION 2========================================*/
 .section_main_page-second {
-    padding-top: 96px;
+    padding-top: 120px;
     padding-bottom: 120px;
 }
 
@@ -648,30 +643,18 @@ screen and (min-resolution: 2dppx) {
 
 }
 
-@media screen and (max-width: 1158px) {
-
-    .hero_main_page {
-        font-weight: 700;
-        color: var(--span_studio-color-2e2f42);
-        font-size: 36px;
-        text-align: left;
-        line-height: 0.9;
-        letter-spacing: 0.02em;
-        margin-top: 0;
-        margin-bottom: 8px;
-    }
-}
 
 .hero_main_page {
     font-weight: 500;
     color: var(--span_studio-color-2e2f42);
     font-size: 20px;
-    text-align: center;
+    text-align: left;
     line-height: 0.8;
     letter-spacing: 0.02em;
     margin-top: 0;
     margin-bottom: 8px;
 }
+
 
 @media screen and (max-width: 1158px) {
     .text-main_page {
@@ -694,19 +677,6 @@ screen and (min-resolution: 2dppx) {
 }
 
 
-@media screen and (min-width:768px) {
-    .hero_main_page {
-        padding-bottom: 8px;
-        text-align: center;
-    }
-}
-
-@media screen and (min-width:768px) {
-    .text-main_page {
-        padding-top: 2px;
-        text-align: center;
-    }
-}
 
 /*============================== SECTION 3=======================================*/
 .section_main_page {
