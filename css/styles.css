@@ -318,14 +318,7 @@ h2 {
 
 
 
-/*** nav-header-tablet ***/
-@media screen and (min-width: 1158px) {
-    .address_contacts {
-        margin-right: 0;
-        display: flex;
-        gap: 40px;
-    }
-}
+
 
 
 /**** section 3 ****/
@@ -355,8 +348,11 @@ h2 {
 
 /**** address-desktop ****/
 
-@media screen and (min-width:1158px) and (min-width:1400px) {
+
+/*** nav-header-tablet ***/
+@media screen and (min-width: 1158px) {
     .address_contacts {
+        margin-right: 0;
         display: flex;
         gap: 40px;
     }
@@ -904,14 +900,14 @@ screen and (min-resolution: 2dppx) {
     gap: 16px;
 }
 
+@media screen and (min-width:1158px) {}
 
-@media screen and (min-width:768px) {
-    .customers-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 24px;
-    }
+.customers-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
 }
+
 
 
 /*li*/
