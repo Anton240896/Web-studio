@@ -520,14 +520,25 @@ h2 {
 
 
 
-/*mail*/
-.link-contacts {
-    color: var(--mail-color-434455);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
 
+@media screen and (min-width:768px) {
+    .link-contacts {
+        color: var(--span_studio-color-2e2f42);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+@media screen and (min-width:1158px) {
+    .link-contacts {
+        color: var(--span_studio-color-2e2f42);
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
 }
 
 .link-contacts:hover,
@@ -536,11 +547,11 @@ h2 {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts {
-    margin-left: 0;
-    gap: 40px;
+@media screen and (min-width: 768px) and (max-width: 1158px) {
+    .contacts:not(:last-child) {
+        margin-bottom: 12px;
+    }
 }
-
 
 /*============================= SECTION 1 ========================================*/
 .section_main_page_title {
@@ -688,7 +699,11 @@ screen and (min-resolution: 2dppx) {
 }
 
 
-
+@media screen and (min-width:768px) and (max-width:1158px) {
+    .list-paragraph {
+        width: calc(((100% - 72px) / 2));
+    }
+}
 
 @media screen and (min-width:1158px) {
     .list-paragraph {
@@ -728,10 +743,17 @@ screen and (min-resolution: 2dppx) {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-    text-align: center;
+    text-align: left;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--span_studio-color-2e2f42)
+}
+
+@media screen and (max-width:768px) {
+    .hero_main_page {
+        text-align: center;
+    }
+
 }
 
 @media screen and (min-width:1158px) {
@@ -749,29 +771,28 @@ screen and (min-resolution: 2dppx) {
 }
 
 .text-main_page {
-    font-size: 500;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    text-align: left;
-    margin: 0;
 }
 
 
-@media screen and (max-width: 1158px) {
+@media screen and (min-width: 1158px) {
     .text-main_page {
-        font-weight: 500;
+        font-style: normal;
+        font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        text-align: left;
-        margin: 0;
     }
 }
 
 
 
-/*============================== SECTION 3=======================================*/
+/*============================== SECTION 3 =======================================*/
 .section_main_page {}
 
 @media screen and (min-width:1158px) {
@@ -804,7 +825,7 @@ screen and (min-resolution: 2dppx) {
     width: calc((100% - 48px) / 3);
 }
 
-/*=========================== SECTION 4==========================================*/
+/*=========================== SECTION 4 ==========================================*/
 .section_team {
     padding-bottom: 120px;
     padding-top: 120px;
@@ -826,6 +847,7 @@ screen and (min-resolution: 2dppx) {
 }
 
 .text-main_page-dreamteam {
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -834,12 +856,13 @@ screen and (min-resolution: 2dppx) {
 }
 
 .hero_main_page-dreamteam {
-    margin-top: 0;
-    font-size: 20px;
-    line-height: 0.8;
-    letter-spacing: 0.02em;
-    text-align: center;
     margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--span_studio-color-2e2f42);
 }
 
 .container-section-fourth {
@@ -850,7 +873,6 @@ screen and (min-resolution: 2dppx) {
     align-items: center;
 }
 
-/**************** mobile *****************/
 @media screen and (min-width:1158px) {
     .container-section-fourth {
         justify-content: space-between;
@@ -858,12 +880,6 @@ screen and (min-resolution: 2dppx) {
         gap: 24px;
         align-content: stretch;
         align-items: center;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .container-section-fourth {
-        background-color: var(--button-All-f4f4fdl);
     }
 }
 
@@ -893,47 +909,43 @@ screen and (min-resolution: 2dppx) {
 
 /*li*/
 
-@media screen and (min-width: 330px) {
-    .dreamteam_main_page {
-        background-color: var(--color-white);
-        border-radius: 0px 0px 4px 4px;
-        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-            0px 1px 1px rgba(46, 47, 66, 0.16),
-            0px 2px 1px rgba(46, 47, 66, 0.08);
-    }
+.dreamteam_main_page {
+    background-color: var(--color-white);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 }
 
 
 /*div*/
-.container-dreamteam {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    flex-direction: column;
-    align-items: baseline;
+@media screen and (max-width: 768px) {
+
+    .container-dreamteam {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        margin-top: 32px;
+
+
+    }
 }
 
 .social-media-list {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 /*ul*/
-@media screen and (min-width: 768px) {
-
-    .social-media-list {
-        background-color: var(--color-white);
-
-        display: flex;
-        justify-content: center;
-        gap: 24px;
-    }
-}
 
 
 @media screen and (min-width: 768px) {
     .social-media-list {
         display: flex;
+        margin-top: 8px;
         flex-wrap: wrap;
         justify-content: center;
         gap: 24px;
@@ -987,8 +999,7 @@ screen and (min-resolution: 2dppx) {
 
 /*section*/
 .five-section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 96px 0;
 }
 
 
@@ -1008,37 +1019,29 @@ screen and (min-resolution: 2dppx) {
 .customers-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
+    column-gap: 16px;
+    row-gap: 72px;
 }
 
-@media screen and (min-width:1158px) {}
-
-.customers-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
+@media screen and (min-width: 768px) {
+    .customers-list {
+        column-gap: 24px;
+    }
 }
 
 
 
 /*li*/
 
-@media screen and (max-width:768px) {
-    .first-list-costumers {
-        width: calc((100% - 16px) / 2);
-        width: 190px;
-        height: 88px;
-        list-style: none;
-    }
+.first-list-costumers {
+    width: calc((100% - 16px) / 2);
+    height: 88px;
 }
+
 
 @media screen and (min-width:768px) {
     .first-list-costumers {
         width: calc((100% - 48px) / 3);
-        width: 168px;
-        height: 88px;
-        list-style: none;
     }
 }
 
@@ -1060,7 +1063,6 @@ screen and (min-resolution: 2dppx) {
 .link-section-five {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    width: 100%;
     height: 100%;
     border: 1px solid #8e8f99;
     border-radius: 4px;
@@ -1068,6 +1070,19 @@ screen and (min-resolution: 2dppx) {
     align-items: center;
     justify-content: center;
     color: var(--section-five-8e8f99);
+}
+
+@media screen and (min-width:768px) {
+    .link-section-five {
+        max-width: 168px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .customers-link {
+        max-width: 168px;
+    }
 }
 
 /*svg-section-5*/
@@ -1093,13 +1108,15 @@ footer {
 }
 
 /*div-footer*/
-@media screen and (min-width:768px) {
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
     .footer-container {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
-@media screen and (min-width:428px) and (max-width:1158px) {
+@media screen and (min-width:1158px) {
     .footer-container {
         display: flex;
         flex-wrap: wrap;
@@ -1176,7 +1193,6 @@ footer {
 @media screen and (min-width:768px) {
     .form-subscribe {
         display: flex;
-        gap: 24px;
     }
 }
 
@@ -1211,13 +1227,35 @@ footer {
     }
 }
 
+.input {
+    width: 100%;
+    height: 40px;
+    padding-left: 16px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--span_studio-color-2e2f42);
+}
+
+
 
 
 
 /************ div-input ****************/
-.container-subscribe {
-    margin-left: 80px;
+@media screen and (max-width:768px) {
+    .container-subscribe {}
+
 }
+
+@media screen and (min-width:1158px) {
+
+    .container-subscribe {
+        margin-left: 80px;
+    }
+}
+
+
 
 .container-subscribe input {
     display: flex;
@@ -1236,7 +1274,7 @@ footer {
     .container-subscribe input {
         display: flex;
         justify-content: center;
-        width: 398px;
+        width: 100%;
         height: 40px;
         background-color: #2e2f42;
         outline: none;
@@ -1274,32 +1312,62 @@ footer {
     color: var(--background-color-main_page-ffffff);
 }
 
+@media screen and (max-width:767px) {
 
-.button-subscribe {
-    height: 40px;
-    background: #4D5AE5;
-    border-radius: 4px;
-    color: #FFFFFF;
-    padding: 8px 24px;
-    gap: 16px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.04em;
-    border: none;
-    cursor: pointer;
+    .button-subscribe {
+        width: 165px;
+        height: 40px;
+        padding-left: 24px;
+        margin-top: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        background: var(--section-four-404bbf);
+        border: none;
+        border-radius: 4px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
+
+@media screen and (min-width: 768px) {
+
+    .button-subscribe {
+        width: 165px;
+        height: 40px;
+        padding-left: 24px;
+        margin-left: 24px;
+        margin-right: auto;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        background: var(--section-four-404bbf);
+        border: none;
+        border-radius: 4px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+}
+
+
 
 @media screen and (min-width:1158px) {
     .button-subscribe {
         display: flex;
     }
-
 }
 
 /********* cursor-subscribe***************/
@@ -1334,8 +1402,6 @@ footer {
 }
 
 
-
-
 .footer_logo_studio {
     font-family: "Raleway", sans-serif;
     font-weight: 800;
@@ -1349,39 +1415,28 @@ footer {
 
 
 /*logo-paragraph*/
-.div-logo-paragraph {
-    width: 268px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 72px;
-}
 
-@media screen and (min-width: 768px) {
-    .logo-div {
-        display: inline-block;
-        width: 264px;
-        margin-right: 24px;
 
-        margin-left: 0;
-    }
-
-}
-
-.footer-social {
-    margin-left: 120px;
-    text-align: center;
-}
-
+.footer-social {}
 
 
 @media screen and (max-width:768px) {
     .footer-social {
         text-align: center;
         margin-bottom: 72px;
+        margin-top: 72px;
     }
 }
 
 
+@media screen and (min-width:1158px) {
+
+    .footer-social {
+        margin-left: 120px;
+        text-align: center;
+    }
+
+}
 
 .logo_studio-footer {
     font-family: "Raleway", sans-serif;
