@@ -568,34 +568,51 @@ screen and (min-resolution: 2dppx) {
     .section_main_page_title {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url("../images/Work07_retina/Dark-bg@2xmobile.jpg");
+            url("../images/Work07_retina/Dark-bg@1xmobile.jpg");
 
     }
 }
 
 
 
-@media screen and (min-width:768px) and (max-width:1158px) {
+@media screen and (min-width:768px) {
     .section_main_page_title {
         min-width: 768px;
-        max-width: 1440px;
-        padding: 112px;
+        max-width: 1199px;
+        height: 436px;
         margin-left: auto;
         margin-right: auto;
+        background-color: var(--span_studio-color-2e2f42);
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)), url(../images/Work07_retina/Dark-bg@2xtablet.jpg);
     }
+}
 
-    @media (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi) and (min-width:768px),
-    screen and (min-resolution: 2dppx) and (min-width:768px) {
-        .section_main_page_title {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                    rgba(46, 47, 66, 0.7)),
-                url("../images/Work07_retina/Dark-bg@2xtablet.jpg");
-
-        }
+@media screen and (min-width:1157px) {
+    .section_main_page_title {
+        min-width: 1158px;
+        max-width: 1440px;
+        height: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--span_studio-color-2e2f42);
     }
+}
+
+@media (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi) and (min-width:768px),
+screen and (min-resolution: 2dppx) and (min-width:768px) {
+    .section_main_page_title {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url("../images/Work07_retina/Dark-bg@2xtablet.jpg");
+
+    }
+}
 }
 
 @media screen and (min-width:1158px) {
@@ -644,6 +661,8 @@ screen and (min-resolution: 2dppx) {
     text-transform: capitalize;
     color: var(--color-white);
 }
+
+
 
 @media screen and (min-width:768px) {
     .h-section-first {
