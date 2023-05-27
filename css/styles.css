@@ -76,6 +76,8 @@ h2 {
 /*============================== HEADER =======================================*/
 /*header main-page*/
 .header-main-page {
+
+    background-color: var(--color-white);
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -95,12 +97,10 @@ h2 {
 
 
 .container {
+    padding: 0 16px;
     min-width: 320px;
-    max-width: 396px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 428px;
+    margin: 0 auto;
 }
 
 
@@ -580,8 +580,13 @@ screen and (min-resolution: 2dppx) {
     }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:768px) and (max-width:1158px) {
     .section_main_page_title {
+        min-width: 768px;
+        max-width: 1440px;
+        padding: 112px;
+        margin-left: auto;
+        margin-right: auto;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)), url(../images/Work07_retina/Dark-bg@2xtablet.jpg);
     }
@@ -648,12 +653,12 @@ screen and (min-resolution: 2dppx) {
 @media screen and (min-width:768px) {
     .h-section-first {
         max-width: 496px;
+        margin-bottom: 36px;
         font-size: 56px;
         line-height: 1.07;
-        text-align: center;
-        letter-spacing: 0.02em;
     }
 }
+
 
 
 
@@ -873,15 +878,6 @@ screen and (min-resolution: 2dppx) {
     align-items: center;
 }
 
-@media screen and (min-width:1158px) {
-    .container-section-fourth {
-        justify-content: space-between;
-        background-color: var(--button-All-f4f4fdl);
-        gap: 24px;
-        align-content: stretch;
-        align-items: center;
-    }
-}
 
 @media screen and (max-width:428px) {
     .hero_main_page-dreamteam {
@@ -920,6 +916,7 @@ screen and (min-resolution: 2dppx) {
     .dreamteam_main_page {
 
         width: 264px;
+        margin-top: 72px;
         background-color: var(--color-white);
         border-radius: 0px 0px 4px 4px;
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -933,11 +930,13 @@ screen and (min-resolution: 2dppx) {
 
 
 .social-media-list {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 24px;
     margin-bottom: 24px;
+    gap: 24px;
 }
 
 /*ul*/
