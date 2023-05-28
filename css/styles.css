@@ -1551,6 +1551,7 @@ footer {
 @media screen and (max-width:1158px) {
     .footer-paragraph {
         font-size: 16px;
+        text-align: left;
         color: #F4F4FD;
         line-height: 1.5;
         letter-spacing: 0.02em;
