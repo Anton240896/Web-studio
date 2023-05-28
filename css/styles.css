@@ -97,12 +97,14 @@ h2 {
 
 
 .container {
-    padding: 0 16px;
     min-width: 320px;
     max-width: 428px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
 }
 
+.b {}
 
 @media screen and (min-width: 768px) {
     .container {
@@ -407,18 +409,6 @@ h2 {
 }
 
 
-.ul-second-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    row-gap: 72px;
-    padding: 0;
-    margin: auto;
-}
-
-
-
-
 /*address*/
 .header-list {
     display: flex;
@@ -613,7 +603,7 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
 
     }
 }
-}
+
 
 @media screen and (min-width:1158px) {
     .section_main_page_title {
@@ -673,6 +663,12 @@ screen and (min-resolution: 2dppx) {
     }
 }
 
+@media screen and (min-width:1158px) {
+    .h-section-first {
+        margin-bottom: 48px;
+    }
+}
+
 
 
 
@@ -714,7 +710,10 @@ screen and (min-resolution: 2dppx) {
 .ul-second-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 72px 24px;
+    gap: 24px;
+    row-gap: 72px;
+    padding: 0;
+    margin: auto;
 }
 
 
@@ -1127,6 +1126,18 @@ screen and (min-resolution: 2dppx) {
 footer {
     position: relative;
 }
+
+@media screen and (max-width:768px) {
+
+    .div-logo-paragraph {
+        width: 268px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 72px;
+    }
+}
+
+
 
 @media screen and (min-width:768px) and (max-width:1158px) {
     .div-logo-paragraph {
@@ -1996,6 +2007,7 @@ textarea {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
     color: var(--span_studio-color-2e2f42);
 }
 
