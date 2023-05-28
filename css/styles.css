@@ -1455,6 +1455,11 @@ footer {
     padding-left: 16px;
 }
 
+.input {
+    max-width: 398px;
+    width: 100%;
+}
+
 
 .button-subscribe:hover,
 .button-subscribe:focus,
