@@ -857,7 +857,7 @@ screen and (min-resolution: 2dppx) {
     width: calc((100% - 48px) / 3);
 }
 
-/*=========================== SECTION 4 ==========================================*/
+/*=========================== SECTION 4 ==================================*/
 .section_team {
     padding: 96px 0;
 
@@ -966,13 +966,6 @@ screen and (min-resolution: 2dppx) {
     }
 }
 
-/*
-@media screen and (max-width: 767px) {
-    .social-media-list>li:not(:last-child) {
-        margin-bottom: 72px;
-    }
-}*/
-
 .container-dreamteam {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -1041,7 +1034,7 @@ screen and (min-resolution: 2dppx) {
 }
 
 
-/*=========================== SECTION 5 ==========================================*/
+/*=========================== SECTION 5 ===================================*/
 
 /*section*/
 .five-section {
