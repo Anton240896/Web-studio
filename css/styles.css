@@ -912,8 +912,6 @@ screen and (min-resolution: 2dppx) {
 }
 
 
-.b {}
-
 @media screen and (max-width:428px) {
     .hero_main_page-dreamteam {
         letter-spacing: 0.02em;
@@ -946,7 +944,16 @@ screen and (min-resolution: 2dppx) {
 
 /*li*/
 
-@media screen and (max-width: 1440px) {
+.dreamteam_main_page {
+    width: 264px;
+    background-color: var(--color-white);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+@media screen and (min-width: 768px) {
 
     .dreamteam_main_page {
 
@@ -1600,21 +1607,14 @@ footer {
 
 
 @media screen and (min-width:319px) {
-    .backdrop {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(1);
-        width: 100%;
-        padding: 72px 24px 24px;
-        background: #FCFCFC;
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
-            0px 1px 3px rgba(0, 0, 0, 0.12),
-            0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 4px;
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .container-modal {
+        min-height: 396px;
     }
 }
+
+
+.backdrop {}
+
 
 
 .backdrop.is-hidden {
