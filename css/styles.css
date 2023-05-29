@@ -1598,18 +1598,34 @@ footer {
     z-index: 2;
 }
 
+@media screen and (min-width:319px) {
+    .container-modal {
+        min-height: 396px;
+    }
+}
+
+@media screen and (min-width:428px) {
+    .container-modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        min-width: 320px;
+        min-height: 576px;
+        padding: 72px 24px 24px 24px;
+        background: #fcfcfc;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 2;
+    }
+}
+
 
 .is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-}
-
-
-@media screen and (min-width:319px) {
-    .container-modal {
-        min-height: 396px;
-    }
 }
 
 
@@ -1857,8 +1873,6 @@ textarea {
     margin-left: 2px;
     color: var(--header_studio-color-4d5ae5);
 }
-
-.b {}
 
 /*************** button-send  ****************/
 .btn_main_page-modal {
