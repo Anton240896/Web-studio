@@ -982,7 +982,8 @@ screen and (min-resolution: 2dppx) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 24px;
+    row-gap: 72px;
+    column-gap: 24px;
 }
 
 /*ul*/
