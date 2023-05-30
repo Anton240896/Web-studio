@@ -156,7 +156,7 @@ p {
     }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
     .menu-toggle {
         display: none;
     }
@@ -1407,7 +1407,7 @@ footer {
     color: var(--background-color-main_page-ffffff);
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
 
     .button-subscribe {
         width: 165px;
