@@ -244,6 +244,23 @@ p {
     text-decoration: none;
 }
 
+.modal-portfolio {
+    padding: 0;
+    list-style: none;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    top: 16px;
+    right: 16px;
+    color: var(--header_studio-color-4d5ae5);
+    text-decoration: none;
+}
+
 .mobile-link {
     padding: 0;
     list-style: none;
@@ -994,6 +1011,8 @@ screen and (min-resolution: 2dppx) {
 
 /*li*/
 .social-list {
+    background-color: var(--section-four-404bbf);
+    border-radius: 50%;
     width: 40px;
     height: 40px;
 }
@@ -2005,7 +2024,7 @@ textarea {
     background-color: var(--section-four-404bbf);
     font-style: italic;
     overflow: hidden;
-    padding: 70px 10px;
+    padding: 70px 30px;
     text-align: center;
     color: var(--color-white);
     width: 100%;
