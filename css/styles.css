@@ -1962,22 +1962,16 @@ textarea {
 
 /*list-pictures*/
 .list-portfolio {
-    position: relative;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 72px;
     column-gap: 24px;
-    row-gap: 48px;
 
 }
 
 @media screen and (min-width:768px) {
-    .list-portfolio {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 24px;
-        row-gap: 64px;
-    }
+    .list-portfolio {}
 }
 
 
