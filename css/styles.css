@@ -1659,7 +1659,7 @@ footer {
         border 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: white;
-    background-color: #404BBF;
+    background-color: var(--color-aqua);
     border: none;
     border-color: transparent;
 }
@@ -1844,8 +1844,8 @@ textarea {
 }
 
 .modal-checkbox-input:checked+.modal-checkbox-label::before {
-    background-color: var(--section-four-404bbf);
-    border: 1px solid var(--section-four-404bbf);
+    background-color: var(--color-aqua);
+    border: 1px solid var(--color-aqua);
     margin-top: -2px;
     border-radius: 2px;
     background-image: url(../images/SVG/work06/Vector.svg);
@@ -1855,8 +1855,7 @@ textarea {
 }
 
 .modal-checkbox-input:focus+.modal-checkbox-label::before {
-    border: 1px solid #404BBF;
-    border-radius: 2px;
+    border: 1px solid var(--color-aqua) border-radius: 2px;
 }
 
 /************ text-checkbox-link ************/
@@ -1893,7 +1892,7 @@ textarea {
 
 .btn_main_page-modal:hover,
 .btn_main_page-modal:focus {
-    background-color: var(--section-four-404bbf);
+    background-color: var(--color-aqua);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     outline: none;
 }
