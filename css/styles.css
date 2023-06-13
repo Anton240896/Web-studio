@@ -1955,7 +1955,6 @@ textarea {
 .list-portfolio {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     row-gap: 72px;
     column-gap: 24px;
 
