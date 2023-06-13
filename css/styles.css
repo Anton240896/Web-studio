@@ -2021,7 +2021,7 @@ textarea {
     left: 0;
     right: 0;
     background-color: var(--section-four-404bbf);
-    font-style: italic;
+    font-style: inherit;
     overflow: hidden;
     padding: 70px 30px;
     text-align: center;
