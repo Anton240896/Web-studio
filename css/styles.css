@@ -399,11 +399,6 @@ p {
 }
 
 
-.link-contacts:hover,
-.link-contacts :focus {
-    color: var(--section-four-404bbf);
-}
-
 
 
 /*webstudio*/
@@ -458,7 +453,7 @@ p {
 
 .header_studio:hover,
 .header_studio:focus {
-    color: var(--section-four-404bbf);
+    color: var(--color-aqua);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
@@ -509,7 +504,7 @@ p {
 
 .link-contacts:hover,
 .link-contacts:focus {
-    color: var(--section-four-404bbf);
+    color: var(--color-aqua);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -996,7 +991,6 @@ screen and (min-resolution: 2dppx) {
     width: 100%;
     height: 100%;
     background-color: var(--header_studio-color-4d5ae5);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1005,10 +999,12 @@ screen and (min-resolution: 2dppx) {
 
 .link-social:hover,
 .link-social:focus {
-    transform: scale(1.2);
-    transition: background-color 550ms cubic-bezier(0.4, 0, 0.2, 1);
-
     background-color: var(--color-aqua);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--color-aqua);
+    transform: scale(1.2);
+
+    transition: transform 300ms cubic-bezier(0.07, 0.76, 0.93, 0.59) 0.1s;
 }
 
 
