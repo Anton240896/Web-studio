@@ -638,6 +638,7 @@ screen and (min-resolution: 2dppx) {
     margin-bottom: 48px;
     margin-left: auto;
     margin-right: auto;
+    animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 2200ms both;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -1545,6 +1546,16 @@ footer {
     width: 264px;
     margin: 0;
 }
+
+.footer-copyright {
+    margin-top: 0;
+    font-size: 10px;
+    color: #F4F4FD;
+    letter-spacing: 0.02em;
+    width: 230px;
+}
+
+
 
 @media screen and (max-width:1158px) {
     .footer-paragraph {

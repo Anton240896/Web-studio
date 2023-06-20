@@ -74,6 +74,80 @@
         <h1 class="h-section-first">Effective Solutions for Your Business</h1>
         <button class="btn_main_page" type="button" data-modal-open>Order Service</button>
       </div>
+
+
+      <!--modal-window-->
+      <div data-modal class="backdrop is-hidden">
+        <div class="container-modal">
+          <button class="close-btn" type="button" data-modal-close>
+            <svg class="close-btn-icons" width="8" height="8">
+              <use href="./images/button_close.svg#icon-close"></use>
+            </svg></button>
+
+          <!--modal-text-->
+          <p class="text-modal">Leave your contacts and we will call you back</p>
+
+          <form class="form-modal">
+            <!--name-modal-person-->
+            <label class="label-form-modal">
+              Name
+
+              <span class="label-form">
+                <input class="input-modal" type="text" name="name" id="name">
+                <svg class="icons-modal" width="18" height="18">
+                  <use href="./images/SVG/work06/work__06.svg#icon-person-black"></use>
+                </svg>
+              </span>
+            </label>
+
+            <!--phone-modal-->
+            <label class="label-form-modal">
+              Phone
+
+              <span class="label-form">
+                <input class="input-modal" type="text" name="phone" id="phone">
+                <svg class="icons-modal-svg" width="18" height="24">
+                  <use href="./images/SVG/work06/work__06.svg#icon-phone-black"></use>
+                </svg>
+              </span>
+            </label>
+
+
+            <!--email-modal-->
+            <label class="label-form-modal">
+              Email
+
+              <span class="label-form">
+                <input class="input-modal" type="text" name="mail" id="email">
+                <svg class="icons-modal-svg" width="18" height="24">
+                  <use href="./images/SVG/work06/work__06.svg#icon-email-black"></use>
+                </svg>
+              </span>
+            </label>
+
+            <!--comment-modal-->
+            <div class="div-form-comment">
+              <label class="label-form-modal" for="comment">Comment</label>
+              <textarea name="comment" id="comment" placeholder="Text input"></textarea>
+            </div>
+
+            <!--checkbox-modal-->
+            <div class="checkbox-modal">
+              <input class="modal-checkbox-input visually-hidden" type="checkbox" name="policy_agreement"
+                id="policy_agreement" required />
+              <label class="modal-checkbox-label" for="policy_agreement">
+                I accept the terms and conditions of the
+                <a href="" class="text-checkbox-link">Privacy Policy</a></label>
+            </div>
+
+            <!--button-modal-->
+            <button type="submit" class="btn_main_page-modal">Send</button>
+
+
+          </form>
+        </div>
+      </div>
+
     </section>
 
     <!--       S E C T I O N  2      -->
@@ -427,6 +501,8 @@
         <p class="footer-paragraph ">
           Increase the flow of customers and sales for your business with digital
           marketing & growth solutions.</p>
+
+
       </div>
 
       <!--social-->
@@ -463,90 +539,23 @@
       <!--subscribe-->
       <div class="container-subscribe">
         <p class="text-subscribe">Subscribe</p>
-        <form class="form-subscribe">
 
+        <form class="form-subscribe">
           <input class="input" type="text" name="mail" id="email" placeholder="E-mail">
           <button class="button-subscribe">Subscribe<svg class="icon-subscribe" width="24" height="20">
               <use href="./images/SVG/work06/send-symbol-defs.svg#icon-send"></use>
             </svg>
           </button>
+
         </form>
+
       </div>
     </div>
 
+
+
   </footer>
 
-  <!--modal-window-->
-  <div data-modal class="backdrop is-hidden">
-    <div class="container-modal">
-      <button class="close-btn" type="button" data-modal-close>
-        <svg class="close-btn-icons" width="8" height="8">
-          <use href="./images/button_close.svg#icon-close"></use>
-        </svg></button>
-
-      <!--modal-text-->
-      <p class="text-modal">Leave your contacts and we will call you back</p>
-
-      <form class="form-modal">
-        <!--name-modal-person-->
-        <label class="label-form-modal">
-          Name
-
-          <span class="label-form">
-            <input class="input-modal" type="text" name="name" id="name">
-            <svg class="icons-modal" width="18" height="18">
-              <use href="./images/SVG/work06/work__06.svg#icon-person-black"></use>
-            </svg>
-          </span>
-        </label>
-
-        <!--phone-modal-->
-        <label class="label-form-modal">
-          Phone
-
-          <span class="label-form">
-            <input class="input-modal" type="text" name="phone" id="phone">
-            <svg class="icons-modal-svg" width="18" height="24">
-              <use href="./images/SVG/work06/work__06.svg#icon-phone-black"></use>
-            </svg>
-          </span>
-        </label>
-
-
-        <!--email-modal-->
-        <label class="label-form-modal">
-          Email
-
-          <span class="label-form">
-            <input class="input-modal" type="text" name="mail" id="email">
-            <svg class="icons-modal-svg" width="18" height="24">
-              <use href="./images/SVG/work06/work__06.svg#icon-email-black"></use>
-            </svg>
-          </span>
-        </label>
-
-        <!--comment-modal-->
-        <div class="div-form-comment">
-          <label class="label-form-modal" for="comment">Comment</label>
-          <textarea name="comment" id="comment" placeholder="Text input"></textarea>
-        </div>
-
-        <!--checkbox-modal-->
-        <div class="checkbox-modal">
-          <input class="modal-checkbox-input visually-hidden" type="checkbox" name="policy_agreement"
-            id="policy_agreement" required />
-          <label class="modal-checkbox-label" for="policy_agreement">
-            I accept the terms and conditions of the
-            <a href="" class="text-checkbox-link">Privacy Policy</a></label>
-        </div>
-
-        <!--button-modal-->
-        <button type="submit" class="btn_main_page-modal">Send</button>
-
-
-      </form>
-    </div>
-  </div>
 
   <!--------- mobile-menu --------->
 
