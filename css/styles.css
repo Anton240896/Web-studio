@@ -79,7 +79,8 @@ p {
 /*============================== HEADER =======================================*/
 /*header main-page*/
 .header-main-page {
-
+    position: fixed;
+    width: 100%;
     background-color: var(--color-white);
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
