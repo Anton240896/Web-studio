@@ -88,6 +88,11 @@ p {
         0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
+.header-main {
+    background-color: var(--color-white);
+}
+
+
 .container-header {
     display: flex;
     align-items: center;
@@ -122,6 +127,13 @@ p {
 
 .container-header {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cont-header {
+    display: flex;
+    margin-top: 20px;
     align-items: center;
     justify-content: space-between;
 }
